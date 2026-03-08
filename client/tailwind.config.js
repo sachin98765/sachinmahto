@@ -1,0 +1,50 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  theme: {
+    extend: {
+      colors: {
+        void:       '#060609',
+        deep:       '#0b0d14',
+        surface:    '#111420',
+        panel:      '#161a28',
+        'c-border': '#1e2438',
+        muted:      '#2e3450',
+        sub:        '#5a6180',
+        txt:        '#c8cedf',
+        bright:     '#eef0f8',
+        teal:       '#00e5c8',
+        'teal-dim': '#00a896',
+        violet:     '#7c5cfc',
+        'vio-dim':  '#5038c8',
+        amber:      '#f5a623',
+        rose:       '#ff4d6d',
+        lgreen:     '#22c55e',
+      },
+      fontFamily: {
+        display: ['Syne', 'sans-serif'],
+        serif:   ['Crimson Pro', 'serif'],
+        mono:    ['"JetBrains Mono"', 'monospace'],
+      },
+      keyframes: {
+        drift:     { from:{ transform:'translate(0,0) scale(1)' },      to:{ transform:'translate(40px,30px) scale(1.1)' } },
+        blink:     { '0%,49%':{ opacity:'1' },                          '50%,100%':{ opacity:'0' } },
+        pulseDot:  { '0%':{ boxShadow:'0 0 0 0 rgba(0,229,200,.6)' },  '70%':{ boxShadow:'0 0 0 8px rgba(0,229,200,0)' }, '100%':{ boxShadow:'0 0 0 0 rgba(0,229,200,0)' } },
+        slideUp:   { from:{ opacity:'0', transform:'translateY(28px)' },to:{ opacity:'1', transform:'translateY(0)' } },
+        slideLeft: { from:{ opacity:'0', transform:'translateX(-28px)' },to:{ opacity:'1', transform:'translateX(0)' } },
+        codeDrift: { from:{ transform:'translateY(110vh)' },            to:{ transform:'translateY(-120px)' } },
+        burstOut:  { from:{ transform:'translate(-50%,-50%) scale(0)', opacity:'1' }, to:{ transform:'translate(-50%,-50%) scale(2.5)', opacity:'0' } },
+      },
+      animation: {
+        drift:     'drift 14s ease-in-out infinite alternate',
+        blink:     'blink .9s steps(1) infinite',
+        pulseDot:  'pulseDot 1.8s ease-out infinite',
+        slideUp:   'slideUp .8s ease both',
+        slideLeft: 'slideLeft .8s ease both',
+        codeDrift: 'codeDrift 22s linear infinite',
+        burstOut:  'burstOut .5s ease forwards',
+      },
+    },
+  },
+  plugins: [],
+};
