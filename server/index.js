@@ -11,7 +11,7 @@ const app = express();
 /* ─── Security ─── */
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'https://sachinmahto-dev.vercel.app',
+  origin: process.env.CLIENT_URL || 'https://sachinmahto.vercel.app',
   credentials: true,
 }));
 app.use(morgan(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
