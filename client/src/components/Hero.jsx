@@ -19,7 +19,7 @@ export default function Hero({ onHover }) {
   }, []);
 
   useEffect(() => {
-    const targets = { proj:5, lc:160, tech:15, cgpa:7.5 };
+    const targets = { proj:5, lc:100, tech:15, cgpa:7.7 };
     let step = 0; const total = 60;
     const iv = setInterval(() => {
       step++;
