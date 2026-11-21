@@ -54,7 +54,7 @@ export default function LeetCode({ onHover }) {
     <section id="leetcode" ref={ref} className="py-24 md:py-28" style={{background:'#0b0d14'}}>
       <div className="container">
         <div className="section-eyebrow">03 — DSA &amp; Problem Solving</div>
-        <h2 className="section-title mb-3">LeetCode <span className="grad-text" style={{backgroundImage:'linear-gradient(135deg,#f5a623,#ff4d6d)'}}>160+ Solved</span></h2>
+        <h2 className="section-title mb-3">LeetCode <span className="grad-text" style={{backgroundImage:'linear-gradient(135deg,#f5a623,#ff4d6d)'}}>100+ Solved</span></h2>
         <p className="font-mono text-[.78rem] leading-[1.9] text-sub max-w-[560px] mb-12">Consistent problem-solving across arrays, sorting, string, two pointers, dynamic programming, divide and conquer  & more. </p>
 
         {/* Donut + Stats */}
@@ -73,7 +73,7 @@ export default function LeetCode({ onHover }) {
               </div>
             </div>
             <div className="flex gap-5 flex-wrap justify-center">
-              {[['#22c55e','114','Easy'],['#f5a623','48','Medium'],['#ff4d6d','2','Hard']].map(([c,n,l])=>(
+              {[['#22c55e','41','Easy'],['#f5a623','12','Medium'],['#ff4d6d','0','Hard']].map(([c,n,l])=>(
                 <div key={l} className="flex items-center gap-2 text-[.68rem]">
                   <div className="w-2.5 h-2.5 rounded-full" style={{background:c}}/><span className="text-bright font-medium">{n}</span><span className="text-sub">{l}</span>
                 </div>
